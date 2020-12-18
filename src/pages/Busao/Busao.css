@@ -1,0 +1,27 @@
+.busao{
+    padding-top: 120px;
+    padding-bottom: 50px;
+    background-color: #000000d3;
+    color: rgb(255, 255, 255);
+  }
+
+.botao {
+  background-image: url("../../assets/images/BOTAO.png");
+  width: 420px;
+  height: 90px;
+  border: #000000;
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.botao:hover {background-color: #272727}
+
+.botao:focus {
+  background-color: #272727;
+  box-shadow: 0 5px rgb(77, 77, 77);
+  transform: translateY(3px);
+  font-size: 30px;
+}
+
+
