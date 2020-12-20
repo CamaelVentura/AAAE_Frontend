@@ -3,7 +3,7 @@ import api from '../../services/api';
 import Menu from '../../components/Menu';
 
 import maiorAtletica from '../../assets/images/a maior atletica na cia.png';
-import './Busao.css';
+import './styles.css';
 import ModalBusao from '../../components/ModalBusao';
 
 import { Form } from 'react-bootstrap';
@@ -121,23 +121,23 @@ class Busao extends Component {
                 <h2> Passo 1:</h2>
                 <p> Escolha um busão </p>               
                 <div className="row mb-5">
-                    <div className="col ml-auto">                        
+                    <div className="col ml-auto centralizando lg-5-responsive">                        
                         <button className="botao"  onClick={() => this.setBusao('Busao do Antonio')}>Busao do Antonio</button>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 centralizando lg-5-responsive">
                         <button className="botao" onClick={() => this.setBusao('Busao do Arthur')}>Busao do Arthur</button>
                     </div>
                 </div>
                 <div className="row mb-5 text-center">
-                    <div className="col">
+                    <div className="col lg-5-responsive">
                         <button className="botao" onClick={() => this.setBusao('Busao do Bernardo')}>Busao do Bernardo</button>
                     </div>
                 </div>
                 <div className="row mb-5">
-                    <div className="col ml-auto">
+                    <div className="col ml-auto centralizando lg-5-responsive">
                         <button className="botao" onClick={() => this.setBusao('Busao do Camael')}>Busao do Camael</button>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 centralizando lg-5-responsive">
                         <button className="botao" onClick={() => this.setBusao('Busao do Izabella')}>Busao da Izabella</button>
                     </div>
                 </div>

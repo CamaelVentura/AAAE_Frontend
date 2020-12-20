@@ -412,7 +412,7 @@
   color: #fff; 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1f1f1f; 
+  color: #fff000; 
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -453,6 +453,12 @@
 }
 #brandImage {
   height: 3rem; 
+}
+
+@media (min-width: 320px) and (max-width:480px){
+  #brandImage {
+    width: 10rem; 
+  }
 }
 
 .nav {
