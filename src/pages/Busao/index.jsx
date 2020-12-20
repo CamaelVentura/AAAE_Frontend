@@ -45,14 +45,13 @@ class Busao extends Component {
   sendValues = async (ok) => {
      if(this.state.bus !== ""){
       try {
-        var person = await api.put('/onibus', {
+        await api.put('/onibus', {
           cpf:this.state.cpf,
           name: this.state.name,
           tel: this.state.tel,
           bus:this.state.bus,
           ok: ok,
-        });
-        console.log(person);      
+        }); 
         const message = this.state.name+", você está agora no "+this.state.bus+"."; 
         this.setState({
           show:true,
@@ -67,8 +66,9 @@ class Busao extends Component {
       }
       catch(error){
         this.setState({show:true}); 
-        const message = error.response.data.error;
+        var message = error.response.data.error;
         if(message === "CPF já cadastrado em outro busão!"){
+          message = message + " Deseja trocar de busão?";
           this.setState({
             show:true,
             tituloModal: "Erro no envio",
@@ -86,7 +86,6 @@ class Busao extends Component {
             cancelModal: "Fechar",
           });
         }
-        console.log(message);
       }
     }
     else {
