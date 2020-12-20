@@ -406,7 +406,7 @@
   color: #fff; 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1f1f1f; 
+  color: #fff000; 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff; 
