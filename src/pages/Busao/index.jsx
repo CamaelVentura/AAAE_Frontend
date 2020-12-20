@@ -86,6 +86,14 @@ class Busao extends Component {
             cancelModal: "Fechar",
           });
         }
+        if(message === "Busão já está lotado!"){
+          this.setState({
+            show:true,
+            tituloModal: "Erro no envio",
+            textoModal: message,
+            cancelModal: "Fechar",
+          });
+        }
       }
     }
     else {
